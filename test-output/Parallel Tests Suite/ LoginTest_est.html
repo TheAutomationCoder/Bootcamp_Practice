@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'> LoginTest_est</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>5/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>3/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Jan 14 17:01:28 EST 2025</td>
+<td>Started on:</td><td>Thu Jan 16 14:52:16 EST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>43 seconds (43904 ms)</td>
+<tr><td>Total time:</td><td>53 seconds (53184 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,117 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.testCases.TC002_LoginTest.verifyLoginwithInvalidCredentials()'><b>verifyLoginwithInvalidCredentials</b><br>Test class: com.testCases.TC002_LoginTest</td>
+<td><div><pre>java.lang.AssertionError: expected [Warning: No match for E-Mail Address and/or Password.] but found [no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;alert alert-danger alert-dismissible&apos;]&quot;}
+  (Session info: chrome=131.0.6778.265)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.22.0&apos;, revision: &apos;c5f3146703*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [92c0e48063566ac9b2837be68e4fc7e0, findElement {using=xpath, value=//div[@class=&apos;alert alert-danger alert-dismissible&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.265, chrome: {chromedriverVersion: 131.0.6778.264 (2d05e315153..., userDataDir: C:\Users\15713\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51092}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51092/devtoo..., se:cdpVersion: 131.0.6778.265, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 92c0e48063566ac9b2837be68e4fc7e0]
+	at com.testCases.TC002_LoginTest.verifyLoginwithInvalidCredentials(TC002_LoginTest.java:80)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1820581857", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1820581857'><pre>java.lang.AssertionError: expected [Warning: No match for E-Mail Address and/or Password.] but found [no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;alert alert-danger alert-dismissible&apos;]&quot;}
+  (Session info: chrome=131.0.6778.265)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.22.0&apos;, revision: &apos;c5f3146703*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [92c0e48063566ac9b2837be68e4fc7e0, findElement {using=xpath, value=//div[@class=&apos;alert alert-danger alert-dismissible&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.265, chrome: {chromedriverVersion: 131.0.6778.264 (2d05e315153..., userDataDir: C:\Users\15713\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51092}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51092/devtoo..., se:cdpVersion: 131.0.6778.265, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 92c0e48063566ac9b2837be68e4fc7e0]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at com.testCases.TC002_LoginTest.verifyLoginwithInvalidCredentials(TC002_LoginTest.java:80)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+</pre></div></td>
+<td>14</td>
+<td>com.testCases.TC002_LoginTest@70efb718</td></tr>
+<tr>
+<td title='com.testCases.TC002_LoginTest.verifyLoginwitInvalidEmailValidPasword()'><b>verifyLoginwitInvalidEmailValidPasword</b><br>Test class: com.testCases.TC002_LoginTest</td>
+<td><div><pre>java.lang.AssertionError: expected [Warning: No match for E-Mail Address and/or Password.] but found [Warning: Your account has exceeded allowed number of login attempts. Please try again in 1 hour.]
+	at com.testCases.TC002_LoginTest.verifyLoginwitInvalidEmailValidPasword(TC002_LoginTest.java:62)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1968587297", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1968587297'><pre>java.lang.AssertionError: expected [Warning: No match for E-Mail Address and/or Password.] but found [Warning: Your account has exceeded allowed number of login attempts. Please try again in 1 hour.]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at com.testCases.TC002_LoginTest.verifyLoginwitInvalidEmailValidPasword(TC002_LoginTest.java:62)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+</pre></div></td>
+<td>1</td>
+<td>com.testCases.TC002_LoginTest@70efb718</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -76,30 +187,20 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.testCases.TC002_LoginTest.verifyLoginwithValidEmailInvalidPasword()'><b>verifyLoginwithValidEmailInvalidPasword</b><br>Test class: com.testCases.TC002_LoginTest</td>
+<td title='com.testCases.TC002_LoginTest.verifyLoginwithNoCredentials()'><b>verifyLoginwithNoCredentials</b><br>Test class: com.testCases.TC002_LoginTest</td>
 <td></td>
 <td>2</td>
-<td>com.testCases.TC002_LoginTest@424fd310</td></tr>
+<td>com.testCases.TC002_LoginTest@70efb718</td></tr>
 <tr>
 <td title='com.testCases.TC002_LoginTest.verifyLoginwithValidCredentials()'><b>verifyLoginwithValidCredentials</b><br>Test class: com.testCases.TC002_LoginTest</td>
 <td></td>
-<td>3</td>
-<td>com.testCases.TC002_LoginTest@424fd310</td></tr>
-<tr>
-<td title='com.testCases.TC002_LoginTest.verifyLoginwithNoCredentials()'><b>verifyLoginwithNoCredentials</b><br>Test class: com.testCases.TC002_LoginTest</td>
-<td></td>
 <td>4</td>
-<td>com.testCases.TC002_LoginTest@424fd310</td></tr>
+<td>com.testCases.TC002_LoginTest@70efb718</td></tr>
 <tr>
-<td title='com.testCases.TC002_LoginTest.verifyLoginwitInvalidEmailValidPasword()'><b>verifyLoginwitInvalidEmailValidPasword</b><br>Test class: com.testCases.TC002_LoginTest</td>
+<td title='com.testCases.TC002_LoginTest.verifyLoginwithValidEmailInvalidPasword()'><b>verifyLoginwithValidEmailInvalidPasword</b><br>Test class: com.testCases.TC002_LoginTest</td>
 <td></td>
-<td>2</td>
-<td>com.testCases.TC002_LoginTest@424fd310</td></tr>
-<tr>
-<td title='com.testCases.TC002_LoginTest.verifyLoginwithInvalidCredentials()'><b>verifyLoginwithInvalidCredentials</b><br>Test class: com.testCases.TC002_LoginTest</td>
-<td></td>
-<td>4</td>
-<td>com.testCases.TC002_LoginTest@424fd310</td></tr>
+<td>1</td>
+<td>com.testCases.TC002_LoginTest@70efb718</td></tr>
 </table><p>
 </body>
 </html>

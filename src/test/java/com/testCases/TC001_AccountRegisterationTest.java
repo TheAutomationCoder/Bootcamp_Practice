@@ -9,8 +9,10 @@ import org.testng.annotations.Test;
 import com.pageObjects.AccountRegisterationPage;
 import com.pageObjects.HomePage;
 import com.testBase.BaseClass;
-@Listeners(com.Listeners.BootcampFrameworkListeners.class)
-class TC001_AccountRegisterationTest extends BaseClass  {
+@Listeners(com.Listeners.BootcampFrameworkListeners.class)class TC001_AccountRegisterationTest extends BaseClass  {
+	public TC001_AccountRegisterationTest() throws Exception {
+		super();
+	}
 	
 	@Test(priority =1)
 	public  void verifyRegistrationWithMandatoryDetails() {

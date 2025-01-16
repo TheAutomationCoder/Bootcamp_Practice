@@ -1,4 +1,4 @@
-package com.Utilities;
+  package com.Utilities;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -28,7 +28,7 @@ public class ExtentReporter {
 		extentReport.attachReporter(sparkReporter);
 		
 		Properties prop = new Properties();	
-		FileInputStream ip = new FileInputStream(System.getProperty("C:\\Users\\15713\\eclipse-workspace\\Bootcamp_Practice\\src\\main\\java\\config.properties"));
+		FileInputStream ip = new FileInputStream(System.getProperty("user.dir")+"\\src\\main\\java\\config.properties");
 		prop.load(ip);
 		extentReport.setSystemInfo("application url", prop.getProperty("url"));
 		extentReport.setSystemInfo("email", prop.getProperty("validEmail"));

@@ -9,8 +9,11 @@ import com.pageObjects.ShoppingCartPage;
 import com.testBase.BaseClass;
 
 
-@Listeners(com.Listeners.BootcampFrameworkListeners.class)
+
 public class TC005_ShoppingCartPage extends BaseClass {
+	public TC005_ShoppingCartPage() throws Exception {
+		super();
+	}
 
 	@Test
 	void  shoppnigcartTast() {

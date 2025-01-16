@@ -51,16 +51,18 @@ public class BootcampFrameworkListeners implements ITestListener {
 
 	@Override
 	public void onTestFailure(ITestResult result) {
-
-		try {
-			driver = (WebDriver)result.getTestClass().getRealClass().getDeclaredField("driver").get(result.getInstance());
-		} catch (IllegalArgumentException | IllegalAccessException | NoSuchFieldException | SecurityException e) {
-			e.printStackTrace();
+		//driver =  null;
+		
+			try {
+				driver = (WebDriver)result.getTestClass().getRealClass().getDeclaredField("driver").get(result.getInstance());
+			} catch (IllegalArgumentException | IllegalAccessException | NoSuchFieldException | SecurityException e) {
 			
-		}
+				e.printStackTrace();
+			}
+		
 		
 		File source = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-		String destinationFile = System.getProperty("user.dir") + "test-output\\screensShotes" + testName + ".png";
+		String destinationFile = System.getProperty("user.dir") + "\\test-output\\screensShotes\\" + testName + ".png";
 		
 		try {
 			FileHandler.copy(source, new File(destinationFile));
@@ -79,6 +81,7 @@ public class BootcampFrameworkListeners implements ITestListener {
 	public void onTestSkipped(ITestResult result) {
 		String testName = result.getName();
 		System.out.println(testName + "skipped");
+		extentTest.log(Status.SKIP,testName +"--------> Execution skipped");
 		
 	}
 	@Override

@@ -8,8 +8,11 @@ import org.testng.annotations.Test;
 import com.pageObjects.HomePage;
 import com.pageObjects.LoginPage;
 import com.testBase.BaseClass;
-@Listeners(com.Listeners.BootcampFrameworkListeners.class)
+
 public class TC002_LoginTest extends BaseClass {
+	public TC002_LoginTest() throws Exception {
+		super();
+	}
 	
 	@Test(priority = 1)
 	public void verifyLoginwithValidCredentials() {
@@ -69,7 +72,7 @@ public class TC002_LoginTest extends BaseClass {
 		
 		LoginPage lg = new LoginPage(driver);
 		Thread.sleep(2000);
-		lg.Email("Mananr@Gmail.com");
+		lg.Email("Mananrr@Gmail.com");
 		
 		lg.Password("Manan@1234");
 		lg.ClickOnLogin();

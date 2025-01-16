@@ -7,8 +7,11 @@ import org.testng.annotations.Test;
 import com.pageObjects.HomePage;
 import com.pageObjects.ProductPage;
 import com.testBase.BaseClass;
-@Listeners(com.Listeners.BootcampFrameworkListeners.class)
+
 public class TC004_SearchProductTest extends BaseClass{
+	public TC004_SearchProductTest() throws Exception {
+		super();
+	}
 	
 	
 	@Test(priority=1)
@@ -23,11 +26,11 @@ public class TC004_SearchProductTest extends BaseClass{
 	}
 	
 	
-	@Test(priority=2)
+	@Test(priority=2) //purposely Failed
 	public void searchWithInvalidProduct() {
 		HomePage hp = new HomePage(driver);
 		ProductPage pg = new ProductPage(driver);
-		hp.enterProduct(p.getProperty("invalidProduct"));
+		hp.enterProduct(p.getProperty("validProduct"));
 		hp.clickOnSearchButton();
 		String waringmsg =pg.displayStatusOfWarningMessage();
 		Assert.assertNotSame(waringmsg, "There is no product that matches the search criteria.");
@@ -37,7 +40,7 @@ public class TC004_SearchProductTest extends BaseClass{
 		
 	}
 	
-	@Test(priority=3, dependsOnMethods ="searchWithInvalidProduct")
+	@Test(priority=3, dependsOnMethods ="searchWithInvalidProduct") //purposely Failed
 	public void searchWithNoProduct() {
 		HomePage hp = new HomePage(driver);
 		hp.clickOnSearchButton();
